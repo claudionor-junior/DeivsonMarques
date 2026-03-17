@@ -54,7 +54,13 @@ body {
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Remover parallax no mobile para manter imagem completa */
+}
+
+@media (min-width: 768px) {
+    .hero-bg {
+        background-attachment: fixed;
+    }
 }
 
 /* Card Image Zoom & Filter Effects */
